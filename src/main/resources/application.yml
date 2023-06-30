@@ -1,0 +1,10 @@
+server:
+  port: 8090
+spring:
+  activemq:
+    broker-url: tcp://127.0.0.1:61616
+    user: admin
+    password: admin
+  jms:
+    # 这里默认是false，也就是只消息是点对点发布接收的，如果为true，则使用topic模式，点对多发布，一个发布，可以多个同时接收
+    pub-sub-domain: false
